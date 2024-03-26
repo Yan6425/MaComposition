@@ -11,33 +11,28 @@
 <body>
   <div id="terrain">
     <div id="gardien">
-      <div class="joueur"></div>
     </div>
     <div id="defenseurs">
       <br/>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
       <br/>
     </div>
     <div id="milieus">
       <br/>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
       <br/>
     </div>
     <div id="attaquants">
       <br/>
-      <div class="joueur"></div>
-      <div class="joueur"></div>
       <br/>
     </div>
     <br/>
   </div>
+  <select id="settings" onchange="formation(this.value)">
+    <option value="setting1">Setting 1</option>
+    <option value="setting2">Setting 2</option>
+    <option value="setting3">Setting 3</option>
+    <option value="setting4">Setting 4</option>
+  </select>
   <script src="script.js"></script>
 </body>
-
+  
 </html>
