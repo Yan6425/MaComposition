@@ -10,7 +10,7 @@ html {
   background-image: url("images/img/terrainDeFoot.jpeg");
   background-size: cover;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column-reverse nowrap;
   justify-content: space-around;
 }
 
@@ -27,19 +27,7 @@ html {
   justify-content: center;
 }
 
-#defenseurs {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-#milieus {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-#attaquants {
+.ligneJoueurs {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
