@@ -1,4 +1,5 @@
 formation("4-4-2");
+ajouterCartes("femmes");
 
 function formation(choix){
   let terrain = document.getElementById("terrain");
@@ -23,6 +24,7 @@ function ajouterCartes(genre){
   fetch("joueurs.json")
   .then(response => response.json())
   .then(data => {
+    document.getElementById("listeJoueurs").innerHTML = "";
     let joueurs = data[genre];
     for (const [key, value] of Object.entries(joueurs)){
       let carte = document.createElement("div");
