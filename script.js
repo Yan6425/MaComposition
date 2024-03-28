@@ -41,3 +41,4 @@ function scrollThroughPlayers() {
     let listeJoueurs = document.getElementById("listeJoueurs");
     listeJoueurs.scrollLeft += 50; // Adjust the scroll amount as needed
 }
+setInterval(scrollThroughPlayers, 1000);
