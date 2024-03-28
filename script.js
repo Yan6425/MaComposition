@@ -24,9 +24,13 @@ function ajouterCartes(genre){
   .then(response => response.json())
   .then(data => {
     let joueurs = data[genre];
+    for (const [key, value] of Object.entries(joueurs)){
+      let carte = document.createElement("div");
+      carte.classList.add("carte");
+      carte.style.backgroundImage = "url(" + value + ")";
+      carte.id = key;
+      document.getElementById("listeJoueurs").appendChild(carte);
+    }
   })
   .catch(error => console.error('Error fetching JSON:', error));
-  for (const [key, value] of joueurs) {
-    console.log(`${key}: ${value}`);
-  }
 }
