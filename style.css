@@ -4,8 +4,8 @@ html {
 }
 
 #terrain {
-  margin-left: 15%;
-  width: 70%;
+  margin: auto;
+  height: 70vh;
   aspect-ratio: 0.69;
   background-image: url("images/img/terrainDeFoot.jpeg");
   background-size: cover;
@@ -14,10 +14,10 @@ html {
   justify-content: space-around;
 }
 
-@media (min-width: 100vh) {
+@media (max-width: 50vh) {
   #terrain {
-      width: 30%;
-      margin-left: 35%;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -36,6 +36,15 @@ html {
 .joueur {
   width: 15%;
   aspect-ratio: 0.69;
+  background-image: url("images/img/empty.png");
+  background-size: cover;
+}
+
+#listeJoueurs{
+  width:100%;
+}
+
+.carte {
   background-image: url("images/img/empty.png");
   background-size: cover;
 }

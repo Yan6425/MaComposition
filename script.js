@@ -1,3 +1,5 @@
+formation("4-4-2");
+
 function formation(choix){
   let terrain = document.getElementById("terrain");
   terrain.innerHTML = "<div id='gardien'><div class='joueur'></div></div>";
