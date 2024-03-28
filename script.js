@@ -36,3 +36,8 @@ function ajouterCartes(genre){
   })
   .catch(error => console.error('Error fetching JSON:', error));
 }
+
+function scrollThroughPlayers() {
+    let listeJoueurs = document.getElementById("listeJoueurs");
+    listeJoueurs.scrollLeft += 50; // Adjust the scroll amount as needed
+}
