@@ -18,3 +18,15 @@ function formation(choix){
   }
   terrain.appendChild(document.createElement("br"));
 }
+
+function ajouterCartes(genre){
+  fetch("joueurs.json")
+  .then(response => response.json())
+  .then(data => {
+    let joueurs = data[genre];
+  })
+  .catch(error => console.error('Error fetching JSON:', error));
+  for (const [key, value] of joueurs) {
+    console.log(`${key}: ${value}`);
+  }
+}

@@ -3,6 +3,11 @@ html {
   width: 100%;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+}
+
 #terrain {
   margin: auto;
   height: 70vh;
@@ -40,11 +45,21 @@ html {
   background-size: cover;
 }
 
+#options{
+  height: 10vh;
+}
+
 #listeJoueurs{
   width:100%;
+  height: 20vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .carte {
   background-image: url("images/img/empty.png");
   background-size: cover;
+  height: 100%;
+  aspect-ratio: 0.69;
 }
