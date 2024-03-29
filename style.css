@@ -4,21 +4,41 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#options {
+  order: 1;
+  height: 5vh;
+  width: 10vw;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#listeJoueurs{
+  order: 0;
+  height: 100vh;
+  aspect-ratio: 0.49;
+  display:flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  border: 3px solid black;
+  background-color: grey;
+}
+
 #terrain {
-  margin: auto;
-  height: 70vh;
+  order: 2;
+  height: 100vh;
   aspect-ratio: 0.69;
   background-image: url("images/img/terrainDeFoot.jpeg");
   background-size: cover;
   display: flex;
   flex-flow: column-reverse nowrap;
   justify-content: space-around;
-}
-
-#terrain {
-  grid-column: 2;
-  width: 50%;
-  height: auto;
 }
 
 #gardien {
@@ -31,37 +51,30 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-}
+} 
 
 .joueur {
-  width: 15%;
+  height: 14vh;
   aspect-ratio: 0.69;
   background-image: url("images/img/empty.png");
   background-size: cover;
 }
 
-#options{
-  height: 10vh;
-}
+@media  (max-width : 132vh){
+  #listeJoueurs {
+    padding-left: 4.5vw;
+    width: 95.5vw;
+    height: auto;
+    aspect-ratio: auto;
+  }
 
-#listeJoueurs{
-  margin-left: 5%;
-  padding: 2%;
-  border: 3px solid black;
-  background-color: grey;
-}
+  #terrain {
+    width: 100vw;
+    height: auto;
+  }
 
-.carte {
-  background-image: url("images/img/empty.png");
-  background-size: cover;
-  width: 17%;
-  margin: 1%;
-  aspect-ratio: 0.69;
-  float: left;
-}
-
-#bloc {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 100%;
+  .joueur {
+    width: 15vw;
+    height: auto;
+  }
 }
