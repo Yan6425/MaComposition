@@ -60,6 +60,10 @@ body {
   background-size: cover;
 }
 
+#selection {
+  border: 1px solid lightblue;
+}
+
 @media  (max-width : 132vh){
   #listeJoueurs {
     padding-left: 4.5vw;
@@ -68,6 +72,12 @@ body {
     aspect-ratio: auto;
   }
 
+  #options {
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100vw;
+  }
+  
   #terrain {
     width: 100vw;
     height: auto;
