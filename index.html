@@ -1,3 +1,4 @@
+html 
 <!DOCTYPE html>
 <html>
 
@@ -9,8 +10,6 @@
 </head>
 
 <body>
-  <div id="terrain">
-  </div>
   <div id="options">
     <select id="choixFormation" onchange="formation(this.value)">
       <option value="4-4-2">4-4-2</option>
@@ -28,8 +27,12 @@
       <option value="hommes">Hommes</option>
     </select>
   </div>
-  <div id="listeJoueurs">
-  </div>
+  <nav id="bloc">
+    <div id="listeJoueurs">
+    </div>
+    <div id="terrain">
+    </div>
+  </nav>
   <script src="script.js"></script>
 </body>
   

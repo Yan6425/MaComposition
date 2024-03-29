@@ -28,7 +28,7 @@ function ajouterCartes(genre){
     let joueurs = data[genre];
     for (const [key, value] of Object.entries(joueurs)){
       let carte = document.createElement("div");
-      carte.classList.add("carte");
+      carte.classList.add("joueur");
       carte.style.backgroundImage = "url(" + value + ")";
       carte.id = key;
       document.getElementById("listeJoueurs").appendChild(carte);
@@ -36,9 +36,3 @@ function ajouterCartes(genre){
   })
   .catch(error => console.error('Error fetching JSON:', error));
 }
-
-function scrollThroughPlayers() {
-    let listeJoueurs = document.getElementById("listeJoueurs");
-    listeJoueurs.scrollLeft += 50; // Adjust the scroll amount as needed
-}
-setInterval(scrollThroughPlayers, 1000);
